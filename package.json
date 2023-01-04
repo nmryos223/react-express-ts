@@ -1,0 +1,18 @@
+{
+  "name": "react-express",
+  "version": "1.0.0",
+  "description": "",
+  "type": "commonjs",
+  "proxy": "http://localhost:8000",
+  "scripts": {
+    "frontend": "PORT=3000 npm start --prefix frontend",
+    "backend": "npm start --prefix backend",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\" "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
