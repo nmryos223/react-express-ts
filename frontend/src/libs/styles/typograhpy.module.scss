@@ -1,0 +1,22 @@
+%base {
+  line-height: 1.4;
+  font-family: "sans-serif";
+  user-select: none;
+}
+
+.paragraphXS {
+  @extend %base;
+  font-size: 10px;
+}
+.paragraphS {
+  @extend %base;
+  font-size: 12px;
+}
+.paragraphM {
+  @extend %base;
+  font-size: 16px;
+}
+.paragraphL {
+  @extend %base;
+  font-size: 24px;
+}
