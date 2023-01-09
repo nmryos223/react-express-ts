@@ -9,7 +9,6 @@ const iconVariants: Variants = {
   initial: {
     scale: 1,
     background: Color.Black,
-    border: "none",
   },
   hover: {
     scale: 1.2,
