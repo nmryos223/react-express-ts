@@ -1,25 +1,11 @@
+@use "../../libs/styles/color.scss" as c;
+@use "sass:color" as color;
+
 .container {
   width: 100%;
-  display: flex;
-}
-
-/*
- * 割合(合計100%)
- * 左: 30%
- * 中: 50%
- * 左: 20%
- */
-
-.left {
-  width: 30%;
-  height: 100vh;
-}
-
-.center {
-  width: 50%;
-  height: 100vh;
-}
-.right {
-  width: 20%;
-  height: 100vh;
+  height: 100%;
+  background: linear-gradient(
+    color.change(c.$Colors1, $alpha: 0.8),
+    c.$Colors2
+  );
 }
