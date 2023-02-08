@@ -4,8 +4,5 @@
 .container {
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    color.change(c.$Colors1, $alpha: 0.8),
-    c.$Colors2
-  );
+  background: color.change(c.$black, $alpha: 0.94);
 }
