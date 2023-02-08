@@ -1,14 +1,17 @@
 import * as React from "react";
+import { BrowserRouter } from "react-router-dom";
 import { Menu } from "../Menu";
-import { Ranking } from "../Ranking";
-import style from "./style.module.scss";
+import { Router as PlatformRouter } from "../Router";
 
 const App: React.FC = () => {
   return (
-    <div className={style.container}>
+    <>
+      {/* 浮かせておく要素は要素は、外だししておく */}
       <Menu />
-      <Ranking />
-    </div>
+      <BrowserRouter>
+        <PlatformRouter />
+      </BrowserRouter>
+    </>
   );
 };
 

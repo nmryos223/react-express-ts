@@ -1,5 +1,6 @@
 import React from "react";
 import { Ranking } from "../../libs/utils/types";
+import style from "./style.module.scss";
 
 /**
  * ランキング表示
@@ -15,7 +16,7 @@ const Component: React.FC<{
   onClick: (id: number) => void;
 }> = ({ list }) => {
   return (
-    <div>
+    <div className={style.container}>
       {list.map((d, i) => (
         <div key={i}>
           <div>{d.rank}</div>

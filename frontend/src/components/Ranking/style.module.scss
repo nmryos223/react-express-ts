@@ -1,0 +1,7 @@
+@use "../../libs/styles/color.scss";
+
+.container {
+  // TODO: borderは仮でエリア決めに使用しているだけ
+  border: 1px solid color.$black;
+  height: 100%;
+}
