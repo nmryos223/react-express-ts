@@ -3,14 +3,14 @@ import actions from "./action-types";
 import { State } from "./types";
 
 const initialState: State = {
-  isMenu: false,
+  isOpenMenu: false,
 };
 
 const reducers = reducerWithInitialState(initialState).case(
-  actions.setIsMenu,
-  (state, isMenu) => ({
+  actions.setIsOpenMenu,
+  (state, isOpenMenu) => ({
     ...state,
-    isMenu,
+    isOpenMenu,
   })
 );
 

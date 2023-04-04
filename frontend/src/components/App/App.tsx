@@ -1,17 +1,19 @@
 import * as React from "react";
 import { BrowserRouter } from "react-router-dom";
-import { Menu } from "../Menu";
 import { Router as PlatformRouter } from "../Router";
 import style from "./style.module.scss";
+import { Header } from "./Header";
+import { Child } from "./Child";
 
 const App: React.FC = () => {
   return (
     <div className={style.container}>
+      <Header />
       {/* 浮かせておく要素は要素は、外だししておく */}
-      <Menu />
       <BrowserRouter>
         <PlatformRouter />
       </BrowserRouter>
+      <Child />
     </div>
   );
 };

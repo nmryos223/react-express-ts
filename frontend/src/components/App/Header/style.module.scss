@@ -1,0 +1,16 @@
+@use "../../../libs/styles/color.scss";
+
+.container {
+  width: 100%;
+  background-color: color.$lightBlueGray;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}

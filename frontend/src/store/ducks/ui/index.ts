@@ -1,15 +1,15 @@
-import menuReducers, { menuActions, menuSelectors } from "./menu";
+import menuReducers, { childActions, childSelectors } from "./child";
 import { combineReducers } from "redux";
 
 export const actions = {
-  menu: menuActions,
+  child: childActions,
 };
 
 export const selectors = {
-  menu: menuSelectors,
+  child: childSelectors,
 };
 
 const reducers = combineReducers({
-  menu: menuReducers,
+  child: menuReducers,
 });
 export default reducers;

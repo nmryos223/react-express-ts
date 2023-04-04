@@ -1,0 +1,21 @@
+@use "../../../libs/styles/color.scss" as color;
+@use "sass:color" as c;
+
+.container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: c.change(color.$darkGray, $alpha: 0.5);
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  max-width: 320px;
+  background-color: color.$white;
+  border-radius: 8px;
+}
