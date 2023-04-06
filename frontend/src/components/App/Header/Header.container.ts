@@ -4,12 +4,12 @@ import Component from "./Header";
 import { actions } from "../../../store";
 
 interface DispatchToProps {
-  onClickMenu: () => void;
+  onClick: () => void;
 }
 
 const mapDispatchToProps = (dispatch: Dispatch): DispatchToProps => ({
-  onClickMenu: () => {
-    dispatch(actions.ui.child.setIsOpenMenu(true));
+  onClick: () => {
+    dispatch(actions.ui.child.setIsOpenIntroduction(true));
   },
 });
 

@@ -8,16 +8,16 @@ import { Phone } from "../../shared";
 /**
  * ヘッダー
  * SP, PC共通: タイトル
- * SP: メニューボタン
+ * SP: 本ボタン
  */
 const Component: React.FC<{
-  onClickMenu: () => void;
-}> = ({ onClickMenu }) => {
+  onClick: () => void;
+}> = ({ onClick }) => {
   return (
     <div className={style["container"]}>
       <span className={`${Style.paragraphL} ${Style.bold}`}>{TITLE}</span>
       <Phone>
-        <MdMenuBook className={style["icon"]} onClick={onClickMenu} />
+        <MdMenuBook className={style["icon"]} onClick={onClick} />
       </Phone>
     </div>
   );

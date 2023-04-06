@@ -1,3 +1,3 @@
 export interface State {
-  isOpenMenu: boolean;
+  isOpenIntroduction: boolean;
 }

@@ -3,7 +3,7 @@ import actionCreatorFactory from "typescript-fsa";
 const actionCreator = actionCreatorFactory("ui/child");
 
 const actions = {
-  setIsOpenMenu: actionCreator<boolean>("SET_IS_OPEN_MENU"),
+  setIsOpenIntroduction: actionCreator<boolean>("SET_IS_OPEN_INTRODUCTION"),
 };
 
 export default actions;
