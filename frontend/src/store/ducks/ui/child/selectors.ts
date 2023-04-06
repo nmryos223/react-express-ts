@@ -6,10 +6,10 @@ type Child = {
   };
 };
 
-const isOpenMenu = (state: Child) => state.ui.child.isOpenMenu;
+const isOpenIntroduction = (state: Child) => state.ui.child.isOpenIntroduction;
 
 const selectors = {
-  isOpenMenu,
+  isOpenIntroduction,
 };
 
 export default selectors;

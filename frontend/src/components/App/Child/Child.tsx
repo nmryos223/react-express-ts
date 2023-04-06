@@ -1,20 +1,18 @@
 import { AnimatePresence } from "framer-motion";
 import React from "react";
-import { Modal } from "../../shared";
+import { Introduction } from "./Introduction";
 
 /**
  * 子ウィンドウ
  */
 const Component: React.FC<{
-  isOpenMenu: boolean;
-}> = ({ isOpenMenu }) => {
+  isOpenIntroduction: boolean;
+}> = ({ isOpenIntroduction }) => {
   return (
     <>
-      {isOpenMenu && (
-        <AnimatePresence>
-          <Modal>sasasa</Modal>
-        </AnimatePresence>
-      )}
+      <AnimatePresence>
+        {isOpenIntroduction && <Introduction />}
+      </AnimatePresence>
     </>
   );
 };

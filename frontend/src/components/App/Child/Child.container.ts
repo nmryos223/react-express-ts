@@ -3,11 +3,11 @@ import { RootState, selectors } from "../../../store";
 import Component from "./Child";
 
 interface StateToProps {
-  isOpenMenu: boolean;
+  isOpenIntroduction: boolean;
 }
 
 const mapStateToProps = (state: RootState): StateToProps => ({
-  isOpenMenu: selectors.ui.child.isOpenMenu(state),
+  isOpenIntroduction: selectors.ui.child.isOpenIntroduction(state),
 });
 
 export default connect(mapStateToProps)(Component);
